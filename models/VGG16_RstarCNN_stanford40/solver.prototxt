@@ -1,0 +1,39 @@
+#train_net: "/research/tklab/personal/ytli/RstarCNN/models/VGG16_RstarCNN_stanford40/train_3.prototxt"
+#train_net: "/research/tklab/personal/ytli/RstarCNN/models/VGG16_RstarCNN_stanford40/train_4.prototxt"
+train_net: "/research/tklab/personal/ytli/RstarCNN/models/VGG16_RstarCNN_stanford40/train.prototxt"
+
+base_lr: 0.00001   
+#0.00001 
+lr_policy: "step"
+gamma: 0.1
+stepsize: 20000
+display: 20
+average_loss: 100
+max_iter: 500000
+# iter_size: 1
+momentum: 0.9
+weight_decay: 0.001
+#clip_gradients:50
+# We disable standard caffe solver snapshotting and implement our own snapshot
+# function
+snapshot: 1500
+# We still use the snapshot prefix, though
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+snapshot_prefix: "007_samm_fast_rcnn_FACE_drop_joint_train_allmil07_07_008_3000"
+#snapshot_prefix: "011_samm_fast_rcnn_FACE_drop_joint_train_allmil07_07_008"
+#snapshot_prefix: "26_casme2_fast_rcnn_FACE_drop_joint_train_allmil07_09_008"
+#snapshot_prefix: "s1_smic_fast_rcnn_FACE_drop_joint_train_allmil07_07_008_3000"
+#debug_info: true
